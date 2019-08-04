@@ -28,8 +28,20 @@ public class PartidadeXadrez {
 	}
 	
 	private void iniciarPartida() {
-		coloqueNovaPeca('b', 6, new Torre(tabuleiro, Cor.WHITE));
-		coloqueNovaPeca('e', 8, new Rei(tabuleiro, Cor.BLACK));
-		coloqueNovaPeca('e', 1, new Rei(tabuleiro, Cor.WHITE));
+		coloqueNovaPeca('c', 1, new Torre(tabuleiro, Cor.WHITE));
+		coloqueNovaPeca('c', 2, new Torre(tabuleiro, Cor.WHITE));
+		coloqueNovaPeca('d', 2, new Torre(tabuleiro, Cor.WHITE));
+		coloqueNovaPeca('e', 2, new Torre(tabuleiro, Cor.WHITE));
+		coloqueNovaPeca('e', 1, new Torre(tabuleiro, Cor.WHITE));
+		coloqueNovaPeca('d', 1, new Rei(tabuleiro, Cor.WHITE));
+
+		coloqueNovaPeca('c', 7, new Torre(tabuleiro, Cor.BLACK));
+		coloqueNovaPeca('c', 8, new Torre(tabuleiro, Cor.BLACK));
+		coloqueNovaPeca('d', 7, new Torre(tabuleiro, Cor.BLACK));
+		coloqueNovaPeca('e', 7, new Torre(tabuleiro, Cor.BLACK));
+		coloqueNovaPeca('e', 8, new Torre(tabuleiro, Cor.BLACK));
+		coloqueNovaPeca('d', 8, new Rei(tabuleiro, Cor.BLACK));
 	}
+
+	
 }
