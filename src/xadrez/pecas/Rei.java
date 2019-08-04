@@ -18,7 +18,7 @@ public class Rei extends PecadeXadrez {
 	@Override
 	public boolean[][] possiveisMovimentos() {
 		boolean[][] matriz = new boolean[getTabuleiro().getLinhas()][getTabuleiro().getColunas()];
-		return null;
+		return matriz;
 	}
 
 }

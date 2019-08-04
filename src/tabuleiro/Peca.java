@@ -21,15 +21,14 @@ public abstract class Peca{
 	}
 	
 	public boolean existePeloMenosUmMovimento() {
-		boolean[][] matriz = new boolean[tabuleiro.getLinhas()][tabuleiro.getColunas()];
-		for(int i = 0; i < matriz.length; i++) {
-			for(int j = 0; j < matriz.length; j++) {
-				if(matriz[i][j]) {
+		boolean[][] mat = possiveisMovimentos();
+		for(int i = 0; i < mat.length; i++) {
+			for(int j = 0; j < mat.length; j++) {
+				if(mat[i][j]) {
 					return true;
 				}
 			}
 		}
 		return false;
 	}
-	
 }

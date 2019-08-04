@@ -15,6 +15,7 @@ public class Programa {
 		Scanner sc = new Scanner(System.in);
 		PartidadeXadrez partida = new PartidadeXadrez();
 		
+				
 		while(true) {
 			try {
 			UI.clearScreen();
@@ -22,6 +23,7 @@ public class Programa {
 			System.out.println();
 			System.out.print("Inicial: ");
 			PoscaodeXadrez inicial = UI.leiaUmaPosicao(sc);
+			
 			
 			System.out.println();
 			System.out.print("Destino: ");
